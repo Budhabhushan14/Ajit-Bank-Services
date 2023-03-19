@@ -1,0 +1,800 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;     /* 1rem=10px fixed kel aahe aani 10px=62.5% */
+}
+
+:root{
+    --navbar-height:59rem;
+}
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0rem;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul{
+    display: inline-flex;
+    font-family: 'Baloo Bhai',cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: #06f858;
+    display: block;
+    font-size: 2rem;
+    padding: .3rem 3.3rem;
+    border-radius: 2rem;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: rgb(240, 55, 194);
+    background-color: white;
+}
+
+#navbar ul li a:active{
+    background-color: yellowgreen;
+}
+
+#shopname{
+    color: #ea8843;
+    padding: .4rem;
+    font-size: 3rem;
+}
+
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: .3rem 2.2rem;
+    height: 55rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#Home::before{
+    content: "";
+    position: absolute;
+    background: url('images/bg1.jpg') no-repeat center center/cover;
+    height: 62.4rem;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    z-index: -1;
+}
+
+#Home h1{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2.4rem;
+}
+
+#Home h2{
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+}
+
+#Home a{
+    text-decoration: none;
+    color: blue;
+    background-color: #19f4d6;
+    font-size: 2rem;
+}
+
+#Home a:hover{
+    color: black;
+    background-color: rgb(253, 253, 250);
+}
+
+#Home h2 img{
+    height: 20rem;
+    width: 50rem;
+    float: left;
+    margin: auto;
+    display: block;
+    padding-bottom: 1rem;
+    
+}
+
+#Home h5 img{
+    height: 20rem;
+    width: 50rem;
+    float: left;
+    margin: auto;
+    display: block;
+    padding-bottom: 1rem;
+    
+}
+
+#Home .abc a{
+    color: black;
+    text-decoration: none;
+}
+
+#Home .abc li{
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+#Home .abc h3{
+    font-size: 3rem;
+    text-align: center;
+    color: red;
+}
+
+
+/* Services Section */
+
+
+#Services{
+    margin: 3.4rem;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    justify-content: center;
+    grid-row-gap: .4rem;
+    justify-content: space-between;
+}
+
+#Services-container
+
+ #Services-container{
+    position: relative;
+}
+
+#Services-container::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30.9%;
+    z-index: -1;
+    background:url('images/bg8.jpg')no-repeat center center/cover;
+    overflow: hidden;
+}
+
+#Services-container h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #ef3f0a;
+    font-family: 'Bree Serif',serif;  
+    transition: 0.5s; 
+}
+
+#Services-container h1:hover{
+    -webkit-text-stroke: .2rem #161715;
+    color: transparent;
+}
+
+#Services .box{
+    border: .2rem solid brown;
+    padding: 1rem;
+    margin: .2rem 1.5rem;
+    border-radius: 2.8rem;
+    background: #f2f2f2;
+   
+}
+
+#Services .box:hover{
+    background-color: #b3f5d7;
+    color: #f43901;
+}
+
+#Services .box img{
+    height: 10rem;
+    width:  20rem;
+    margin: auto;
+    display: block;
+}
+
+#Services .box p{
+    font-family: 'Bree Serif',serif;
+    font-size: 1.5rem;
+}
+
+#Services .center a{
+    text-decoration: none;
+    color: blue;
+    background-color: #bfbaa1;
+    font-size: 2rem;
+}
+
+#Services .center a:hover{
+    color: black;
+    background-color: rgb(253, 253, 250);
+}
+
+#Services .box h2{
+    font-size: 1.2rem;
+    margin: 2rem 1rem;
+}
+
+
+/* Services List */
+
+/*Credit cards */
+
+#Credit-Cards{
+    margin: 3.4rem;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    justify-content: center;
+    grid-row-gap: .4rem;
+    justify-content: space-between;
+}
+
+#Credit
+
+ #Credit{
+    position: relative;
+}
+
+#Credit::before{
+    content: "";
+    position: absolute;
+    background: url('images/bg2.jpg') no-repeat center center/cover;
+    height: 15.2%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#Credit h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #c007f3;
+    font-family: 'Bree Serif',serif;  
+    transition: 0.5s; 
+}
+
+#Credit h1:hover{
+    -webkit-text-stroke: .2rem #7836b2;
+    color: transparent;
+}
+
+#Credit-Cards .box{
+    border: .2rem solid brown;
+    padding: 1rem;
+    margin: .2rem 1.5rem;
+    border-radius: 2.8rem;
+    background: #f2f2f2;
+   
+}
+
+#Credit-Cards .box:hover{
+    background-color: #d4f18a;
+    color: gray;
+}
+
+#Credit-Cards .box img{
+    height: 10rem;
+    width:  20rem;
+    margin: auto;
+    display: block;
+}
+
+#Credit-Cards .box p{
+    font-family: 'Bree Serif',serif;
+    font-size: 1.5rem;
+}
+
+#Credit-Cards .center a{
+    text-decoration: none;
+    color: blue;
+    background-color: #bfbaa1;
+    font-size: 2rem;
+}
+
+#Credit-Cards .center a:hover{
+    color: black;
+    background-color: rgb(253, 253, 250);
+}
+
+#Credit-Cards .box h2{
+    font-size: 1.2rem;
+    margin: 2rem 1rem;
+}
+
+/*Demate cards*/
+
+#Demat-Accounts{
+    margin: 3.4rem;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    justify-content: center;
+    grid-row-gap: .4rem;
+    justify-content: space-between;
+}
+
+#Demat
+
+ #Demat{
+    position: relative;
+}
+
+#Demat::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10.7%;
+    z-index: -1;
+    background:url('images/bg3.jpg')no-repeat center center/cover;
+    overflow: hidden;
+}
+
+#Demat h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #e80e4f;
+    font-family: 'Bree Serif',serif;  
+    transition: 0.5s; 
+}
+
+#Demat h1:hover{
+    -webkit-text-stroke: .2rem #c54a56;
+    color: transparent;
+}
+
+#Demat-Accounts .box{
+    border: .2rem solid brown;
+    padding: 1rem;
+    margin: .2rem 1.5rem;
+    border-radius: 2.8rem;
+    background: #f2f2f2;
+   
+}
+
+#Demat-Accounts .box:hover{
+    background-color: #1e803c;
+    color: #deb8ac;
+}
+
+#Demat-Accounts .box img{
+    height: 10rem;
+    width:  20rem;
+    margin: auto;
+    display: block;
+}
+
+#Demat-Accounts .box p{
+    font-family: 'Bree Serif',serif;
+    font-size: 1.5rem;
+}
+
+#Demat-Accounts .center a{
+    text-decoration: none;
+    color: blue;
+    background-color: #bfbaa1;
+    font-size: 2rem;
+}
+
+#Demat-Accounts .center a:hover{
+    color: black;
+    background-color: rgb(253, 253, 250);
+}
+
+#Demat-Accounts .box h2{
+    font-size: 1.2rem;
+    margin: 2rem 1rem;
+}
+
+/* Inverstments */
+
+#Inverstments{
+    margin: 3.4rem;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    justify-content: center;
+    grid-row-gap: .4rem;
+    justify-content: space-between;
+}
+
+#Inverst
+
+ #Inverst{
+    position: relative;
+}
+
+#Inverst::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6.4%;
+    z-index: -1;
+    background:url('images/bg4.jpg')no-repeat center center/cover;
+    overflow: hidden;
+    opacity: 0.7;
+}
+
+#Inverst h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #1e8cf7;
+    font-family: 'Bree Serif',serif;  
+    transition: 0.5s; 
+}
+
+#Inverst h1:hover{
+    -webkit-text-stroke: .2rem #021818;
+    color: transparent;
+}
+
+#Inverstments .box{
+    border: .2rem solid brown;
+    padding: 1rem;
+    margin: .2rem 1.5rem;
+    border-radius: 2.8rem;
+    background: #f2f2f2;
+    
+}
+
+#Inverstments .box:hover{
+    background-color: #333d62;
+    color: #b8ec8e;
+}
+
+#Inverstments .box img{
+    height: 10rem;
+    width:  20rem;
+    margin: auto;
+    display: block;
+}
+
+#Inverstments .box p{
+    font-family: 'Bree Serif',serif;
+    font-size: 1.5rem;
+}
+
+#Inverstments .center a{
+    text-decoration: none;
+    color: blue;
+    background-color: #bfbaa1;
+    font-size: 2rem;
+}
+
+#Inverstments .center a:hover{
+    color: black;
+    background-color: rgb(253, 253, 250);
+}
+
+#Inverstments .box h2{
+    font-size: 1.2rem;
+    margin: 2rem 1rem;
+}
+
+
+/* Emi Cards */
+
+#Emi-cards{
+    margin: 3.4rem;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    justify-content: center;
+    grid-row-gap: .4rem;
+    justify-content: space-between;
+}
+
+#Emi
+
+ #Emi{
+    position: relative;
+}
+
+#Emi::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6.4%;
+    z-index: -1;
+    background:url('images/bg5.jpg')no-repeat center center/cover;
+    overflow: hidden;
+    
+}
+
+#Emi h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #f205e3;
+    font-family: 'Bree Serif',serif;  
+    transition: 0.5s; 
+}
+
+#Emi h1:hover{
+    -webkit-text-stroke: .2rem #fe0c0c;
+    color: transparent;
+}
+
+#Emi-cards .box{
+    border: .2rem solid brown;
+    padding: 1rem;
+    margin: .2rem 1.5rem;
+    border-radius: 2.8rem;
+    background: #f2f2f2;
+   
+}
+
+#Emi-cards .box:hover{
+    background-color: #f5a763;
+    color: #4a2419;
+}
+
+#Emi-cards .box img{
+    height: 10rem;
+    width:  20rem;
+    margin: auto;
+    display: block;
+}
+
+#Emi-cards .box p{
+    font-family: 'Bree Serif',serif;
+    font-size: 1.5rem;
+}
+
+#Emi-cards .center a{
+    text-decoration: none;
+    color: blue;
+    background-color: #bfbaa1;
+    font-size: 2rem;
+}
+
+#Emi-cards .center a:hover{
+    color: black;
+    background-color: rgb(253, 253, 250);
+}
+
+#Emi-cards .box h2{
+    font-size: 1.2rem;
+    margin: 2rem 1rem;
+}
+
+/* Personal Loans */
+
+#Personal-Loans{
+    margin: 3.4rem;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    justify-content: center;
+    grid-row-gap: .4rem;
+    justify-content: space-between;
+}
+
+#Personal
+
+ #Personal{
+    position: relative;
+}
+
+#Personal::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 24.4%;
+    z-index: -1;
+    background:url('images/bg6.jpg')no-repeat center center/cover;
+    overflow: hidden;   
+}
+
+#Personal h1{
+    font-size: 3rem;
+    text-align: center;
+    color: pink;
+    font-family: 'Bree Serif',serif;  
+    transition: 0.5s; 
+}
+
+#Personal h1:hover{
+    -webkit-text-stroke: .2rem yellow;
+    color: transparent;
+}
+
+#Personal-Loans .box{
+    border: .2rem solid brown;
+    padding: 1rem;
+    margin: .2rem 1.5rem;
+    border-radius: 2.8rem;
+    background: #f2f2f2;
+   
+}
+
+#Personal-Loans .box:hover{
+    background-color: #f097df;
+    color: #3e2556;
+}
+
+#Personal-Loans .box img{
+    height: 10rem;
+    width:  20rem;
+    margin: auto;
+    display: block;
+}
+
+#Personal-Loans .box p{
+    font-family: 'Bree Serif',serif;
+    font-size: 1.5rem;
+}
+
+#Personal-Loans .center a{
+    text-decoration: none;
+    color: blue;
+    background-color: #bfbaa1;
+    font-size: 2rem;
+}
+
+#Personal-Loans .center a:hover{
+    color: black;
+    background-color: rgb(253, 253, 250);
+}
+
+#Personal-Loans .box h2{
+    font-size: 1.2rem;
+    margin: 2rem 1rem;
+}
+
+/* ITR & TAX */
+
+#ITR-TAX{
+    margin: 3.4rem;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    justify-content: center;
+    grid-row-gap: .4rem;
+    justify-content: space-between;
+}
+
+#itr
+
+ #itr{
+    position: relative;
+}
+
+#itr::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6.3%;
+    z-index: -1;
+    background:url('images/bg11.jpg')no-repeat center center/cover;
+    overflow: hidden;   
+}
+
+#itr h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #e33e5b;
+    font-family: 'Bree Serif',serif;  
+    transition: 0.5s; 
+}
+
+#itr h1:hover{
+    -webkit-text-stroke: .2rem rgb(139, 139, 73);
+    color: transparent;
+}
+
+#ITR-TAX .box{
+    border: .2rem solid brown;
+    padding: 1rem;
+    margin: .2rem 1.5rem;
+    border-radius: 2.8rem;
+    background: #f2f2f2;
+   
+}
+
+#ITR-TAX .box:hover{
+    background-color: #794767;
+    color: #471e45;
+}
+
+#ITR-TAX .box img{
+    height: 10rem;
+    width:  20rem;
+    margin: auto;
+    display: block;
+}
+
+#ITR-TAX .box p{
+    font-family: 'Bree Serif',serif;
+    font-size: 1.5rem;
+}
+
+#ITR-TAX .center a{
+    text-decoration: none;
+    color: blue;
+    background-color: #bfbaa1;
+    font-size: 2rem;
+}
+
+#ITR-TAX .center a:hover{
+    color: black;
+    background-color: rgb(253, 253, 250);
+}
+
+#ITR-TAX .box h2{
+    font-size: 1.2rem;
+    margin: 2rem 1rem;
+}
+
+
+/* Contact */
+
+#Contact
+
+ #Contact{
+    position: relative;
+}
+
+#Contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10.3%;
+    z-index: -1;
+    background:url('images/bg10.jpg')no-repeat center center/cover;
+    overflow: hidden;
+    opacity: 0.9;
+    
+}
+
+#Contact h1{
+    font-size: 8rem;
+    color: #19f4d6;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+#Contact h2{
+    font-size: 5rem;
+    color: #0cf36cfa;
+    text-align: center;
+    padding-bottom: 10rem;
+    padding-top: 5rem;
+}
+
+#Contact .icon{
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact .icon a img{
+    height: 5rem;
+    padding: 1rem;
+}
+
+#Contact .icon a img:hover{
+    background-color: #eeee75;
+}
+
+#Contact .icon h1{
+    font-size: 3rem;
+    padding-top: 1.4rem;
+}
+
+#Contact .icon h1:hover{
+    background-color: #eeeec2;
+    color: red;
+}
